@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap");
+
+@import url("Specials.css");
+@import url("Testimonial.css");
+
+*{
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: 'Markazi-text';
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body{
+  position: relative;
+  height: 2000px;
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background: #EDEFEE;
+  padding: 10px 0 10px 0;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  line-height: auto;
+}
+
+.nav-links-wrapper{
+  display: inline-flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links-wrapper li a {
+  text-decoration: none;
+  color: #000;
+}
+
+main{}
+
+main section.hero{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  background-color: #495E57 ;
+  padding: 40px;
+}
+
+main section.hero .hero-content-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+main section.hero .hero-content-wrapper h1{
+  font-weight: 500;
+  font-size: 64px;
+  color: #F4CE14;
+}
+
+main section.hero .hero-content-wrapper h2{
+  font-size: 50px;
+  margin-bottom: 26px;
+}
+
+main section.hero .hero-content-wrapper .hero-paragraph{
+  width: 50%;
+}
+
+main section.hero .hero-content-wrapper p{
+  line-height: 1.5;
+}
+
+main section.hero .hero-content-wrapper button{
+  position: absolute;
+  width: 100%;
+  max-width: 224px;
+  height: 60px;
+  border-radius: 16px;
+  background: #F4CE14;
+  font-family: 'karla';
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  bottom: 20px;
+}
+
+main section.hero .hero-content-wrapper button:hover{
+  font-size: 24px;
+}
+
+main section.hero .image-wrapper img{
+  position: relative;
+  width: 347px;
+  height: 345px;
+  top: 200px;
+  border-radius: 16px;
+}
+
+
+
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #495E57;
+}
