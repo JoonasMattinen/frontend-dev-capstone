@@ -2,7 +2,11 @@ import HeroImage from '../assets/images/restauranfood.jpg'
 import GreekSaladImg from '../assets/images/greek salad.jpg'
 import Bruschetta from '../assets/images/bruschetta-5699486_1920.jpg'
 import Dessert from '../assets/images/lemon dessert.jpg'
-import { CarProfile } from "@phosphor-icons/react";
+import Moustache from '../assets/images/human-3782189_1280.jpg'
+import Woman1 from '../assets/images/woman1.jpg'
+import Woman2 from '../assets/images/woman-2542252_1280.jpg'
+import Man1 from '../assets/images/man1.jpg'
+import { CarProfile, Star } from "@phosphor-icons/react";
 
 const Main = () => {
     return(
@@ -20,6 +24,7 @@ const Main = () => {
                     <img src={HeroImage} alt="hero-image"></img>
                 </div>
             </section>
+            <section className='divider'></section>
             <section className='specials'>
                 <div className='specials-heading'>
                     <h3>This weeks specials!</h3>
@@ -78,12 +83,63 @@ const Main = () => {
             </section>
             <section className='testimonials'>
                 <h3>Testimonials</h3>
-                <div className='testimonial-card'>
-                    <span>Star Rating</span>
-                    <div>
-                        <img src='' alt=''></img>
+                <div className="testimonial-wrapper">
+                    <div className='testimonial-card'>
+                    <span>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                        </span>
+                        <div className='image'>
+                            <img src={Moustache} alt='man'></img>
+                            <span>Carl</span>
+                        </div>
+                        <span>“Awesome expirience”</span>
                     </div>
-                    <span>"Awesome expirience"</span>
+                    <div className='testimonial-card'>
+                    <span>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                        </span>
+                        <div className='image'>
+                            <img src={Woman1} alt='woman'></img>
+                            <span>Carl</span>
+                        </div>
+                        <span>“It just works!”</span>
+                    </div>
+                    <div className='testimonial-card'>
+                    <span>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                        </span>
+                        <div className='image'>
+                            <img src={Man1} alt='man'></img>
+                            <span>Carl</span>
+                        </div>
+                        <span>“Absolutely stunning”</span>
+                    </div>
+                    <div className='testimonial-card'>
+                        <span>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                            <Star color='#F4CE14' weight='fill'/>
+                        </span>
+                        <div className='image'>
+                            <img src={Woman2} alt='woman'></img>
+                            <span>Carl</span>
+                        </div>
+                        <span>“Next level!”</span>
+                    </div>
                 </div>
             </section>
         </main>
