@@ -3,38 +3,63 @@
 
 @import url("Specials.css");
 @import url("Testimonial.css");
+@import url("Hero.css");
+@import url("About.css");
 
-*{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-size: 18px;
-  font-family: 'Markazi Text';
   margin: 0;
   padding: 0;
 }
 
-body{
-  position: relative;
-  height: 3000px;
-  width: 100%;
+html{
+  overflow-x: hidden;
 }
 
-.header{
+body {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Markazi Text', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+header.header{
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   gap: 100px;
   background: #EDEFEE;
+  width: 100%;
   padding: 10px 0 10px 0;
+  z-index: 999;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 40px;
-  line-height: auto;
+  position: relative;
 }
 
-.nav-links-wrapper{
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 10px;
+}
+
+.nav-links-wrapper {
   display: inline-flex;
   list-style: none;
   gap: 40px;
@@ -45,73 +70,7 @@ nav{
   color: #000;
 }
 
-main{}
-
-main section.hero{
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  background-color: #495E57 ;
-  padding: 40px;
-}
-
-main section.hero .hero-content-wrapper{
-  display: flex;
-  flex-direction: column;
-}
-
-main section.hero .hero-content-wrapper h1{
-  font-weight: 500;
-  font-size: 64px;
-  color: #F4CE14;
-}
-
-main section.hero .hero-content-wrapper h2{
-  font-size: 50px;
-  margin-bottom: 26px;
-  font-weight: 500;
-}
-
-main section.hero .hero-content-wrapper .hero-paragraph{
-  width: 50%;
-  font-family: 'karla';
-  font-size: 16px;
-  line-height: 24px;
-  color: #EDEFEE;
-}
-
-main section.hero .hero-content-wrapper p{
-  line-height: 1.5;
-}
-
-main section.hero .hero-content-wrapper button{
-  width: 100%;
-  max-width: 224px;
-  height: 60px;
-  border-radius: 16px;
-  background: #F4CE14;
-  font-family: 'karla';
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
-}
-
-main section.hero .hero-content-wrapper button:hover{
-  font-size: 24px;
-}
-
-main section.hero .image-wrapper img{
-  position: relative;
-  top: 200px;
-}
-
-main section.hero .image-wrapper img{
-  position: relative;
-  width: 347px;
-  height: 345px;
-  border-radius: 16px;
-}
+main{ max-width: 1440px; margin: 0 auto;}
 
 main section.divider{
   position: relative;
@@ -120,8 +79,95 @@ main section.divider{
 }
 
 footer{
-  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
-  bottom: 0;
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #495E57;
+  padding: 40px;
+  gap: 20px;
+}
+
+footer .footer-links{
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-links h3{
+  font-family: 'Karla';
+  font-size: 18px;
+  font-weight: bold;
+  color: 090808;
+  line-height: 24px;
+  text-wrap: nowrap;
+}
+
+footer .footer-links a,
+footer .footer-links p {
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #EDEFEE;
+  transition: font-size 0.1s ease-in-out;
+  line-height: 24px;
+}
+
+footer .footer-links a:hover{
+  font-size: 18px;
+}
+
+footer .image-wrapper{
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+}
+
+footer .image-wrapper img{
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 1240px) {
+  header.header{
+    justify-content: space-between;
+  }
+
+  .mobile-nav {
+      display: flex;
+  }
+
+  .nav-links-wrapper {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      flex-direction: column;
+      background-color: white;
+      width: 100px;
+      text-align: center;
+      gap: 20px;
+  }
+
+  .nav-links-wrapper.open {
+      display: flex;
+      z-index: 9999
+      ;
+  }
+
+  .nav-links-wrapper li {
+      margin: 15px 0;
+  }
+}
+
+@media (max-width: 869px) {
+  footer{
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
 }

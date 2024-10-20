@@ -9,7 +9,7 @@ main section.specials{
     gap: 10px;
     padding-bottom: 100px;
   }
-  
+
 main section.specials .specials-heading{
   display: flex;
   background: #EDEFEE;
@@ -18,12 +18,12 @@ main section.specials .specials-heading{
   width: 100%;
   max-width: 913px;
 }
-  
+
 main section.specials .specials-heading h3{
   font-size: 64px;
   font-weight: bold;
 }
-  
+
 main section.specials .specials-heading button{
   width: 224px;
   height: 60px;
@@ -35,40 +35,47 @@ main section.specials .specials-heading button{
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
-  
+
 main section.specials .specials-heading button:hover{
   font-size: 24px;
 }
-  
+
 main section.specials .image-wrapper{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-  
+
 main section.specials .image-wrapper .image-card{
   display: flex;
   flex-direction: column;
   width: 291px;
   gap: 10px;
 }
-  
+
 main section.specials .image-wrapper .image-card img{
   width: 100%;
   height: 188px;
 }
-  
+
 main section.specials .image-wrapper .image-card .image-text-wrapper{
   display: flex;
   flex-direction: column;
 }
-  
+
 main section.specials .image-wrapper .image-card .image-text-wrapper .header{
   display: flex;
   justify-content: space-between;
+  font-family: "Karla";
   font-weight: bold;
   color: #000;
+}
+
+main section.specials .image-wrapper .image-card .image-text-wrapper span{
+  font-family: "Karla";
+  font-size: 16px;
+  line-height: 24px;
 }
 
 main section.specials .image-wrapper .image-card .image-text-wrapper .header span:last-child{
@@ -83,4 +90,17 @@ main section.specials .image-wrapper .image-card .image-text-wrapper .CTA{
 
 main section.specials .image-wrapper .image-card .image-text-wrapper .CTA i{
   line-height: 0;
+}
+
+@media (max-width: 960px) {
+  main section.specials .specials-heading{
+    display: flex;
+    flex-direction: column;
+    background: #EDEFEE;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 913px;
+  }
 }

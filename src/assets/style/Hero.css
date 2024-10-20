@@ -1,0 +1,76 @@
+main section.hero{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #495E57 ;
+    padding: 40px;
+  }
+  
+  main section.hero .hero-content-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main section.hero .hero-content-wrapper h1{
+    font-weight: 500;
+    font-size: 64px;
+    color: #F4CE14;
+  }
+  
+  main section.hero .hero-content-wrapper h2{
+    font-size: 50px;
+    margin-bottom: 26px;
+    font-weight: 500;
+  }
+  
+  main section.hero .hero-content-wrapper .hero-paragraph{
+    width: 20ch;
+    font-family: 'karla';
+    font-size: 16px;
+    line-height: 24px;
+    color: #EDEFEE;
+  }
+
+  main section.hero .hero-content-wrapper button{
+    width: 100%;
+    max-width: 224px;
+    height: 60px;
+    border-radius: 16px;
+    margin-top: 26px;
+    background: #F4CE14;
+    font-family: 'karla';
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+  }
+  
+  main section.hero .hero-content-wrapper button:hover{
+    font-size: 24px;
+  }
+  
+  main section.hero .image-wrapper img{
+    position: relative;
+    top: 200px;
+  }
+  
+  main section.hero .image-wrapper img{
+    position: relative;
+    width: 347px;
+    height: 345px;
+    border-radius: 16px;
+  }
+
+  @media (max-width: 768px) {
+    main section.hero{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.hero .image-wrapper img{
+        display: none;
+    }
+    main section.hero .hero-content-wrapper{
+        align-items: center;
+      }
+  }
