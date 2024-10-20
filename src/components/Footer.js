@@ -8,12 +8,12 @@ const Footer = () => {
             </div>
             <div className="footer-links">
                 <h3>Doormat Navigation</h3>
-                <a href='#'>Home</a>
-                <a href='#'>About</a>
-                <a href='#'>Menu</a>
-                <a href='#'>Reservation</a>
-                <a href='#'>Order Online</a>
-                <a href='#'>Login</a>
+                <a href='/'>Home</a>
+                <a href='/about'>About</a>
+                <a href='/menu'>Menu</a>
+                <a href='/reservation'>Reservation</a>
+                <a href='/'>Order Online</a>
+                <a href='/'>Login</a>
             </div>
             <div className="footer-links">
                 <h3>Contact</h3>
@@ -23,9 +23,9 @@ const Footer = () => {
             </div>
             <div className="footer-links">
                 <h3>Social Media links</h3>
-                <a href='#'>Instagram</a>
-                <a href='#'>Linkedin</a>
-                <a href='#'>X</a>
+                <a href='https://instagram.com'>Instagram</a>
+                <a href='https://linkedin.com'>Linkedin</a>
+                <a href='https://x.com'>X</a>
             </div>
         </footer>
     )

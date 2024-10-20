@@ -2,7 +2,7 @@ import HeroImage from '../assets/images/restauranfood.jpg'
 
 const Hero = () => {
     return(
-        <>
+        <section className='hero'>
             <div className='hero-content-wrapper'>
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
@@ -14,7 +14,7 @@ const Hero = () => {
             <div className="image-wrapper">
                 <img src={HeroImage} alt="hero-image"></img>
             </div>
-        </>
+        </section>
     )
 }
 

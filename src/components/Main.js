@@ -1,26 +1,14 @@
-import About from './About'
-import Hero from './Hero'
-import Specials from './Specials'
-import Testimonials from './Testimonials'
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './HomePage';
 
 const Main = () => {
-    return(
-        <main>
-            <section className="hero">
-                <Hero />
-            </section>
-            <section className='divider'></section>
-            <section className='specials'>
-                <Specials />
-            </section>
-            <section className='testimonials'>
-                <Testimonials />
-            </section>
-            <section className='about'>
-                <About />
-            </section>
-        </main>
-    )
+  return (
+    <main>
+      <Routes>
+        <Route path="/" element={<Homepage />} /> {/* Default route (home) */}
+      </Routes>
+    </main>
+  );
 }
 
 export default Main;

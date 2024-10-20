@@ -5,7 +5,7 @@ import { CarProfile } from "@phosphor-icons/react";
 
 const Specials = () => {
     return(
-    <>
+    <section className='specials'>
             <div className='specials-heading'>
             <h3>This weeks specials!</h3>
             <button type='button'>Online menu</button>
@@ -60,7 +60,7 @@ const Specials = () => {
                 </div>
             </div>
         </div>
-    </>
+    </section>
     )
 }
 

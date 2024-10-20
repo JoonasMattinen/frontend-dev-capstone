@@ -6,7 +6,7 @@ import { Star } from "@phosphor-icons/react";
 
 const Testimonials = () => {
     return(
-        <>
+        <section className='testimonials'>
             <h3>Testimonials</h3>
             <div className="testimonial-wrapper">
                 <div className='testimonial-card'>
@@ -66,7 +66,7 @@ const Testimonials = () => {
                     <span>“Next level!”</span>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
 
