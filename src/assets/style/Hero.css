@@ -13,21 +13,21 @@ main section.hero{
   
   main section.hero .hero-content-wrapper h1{
     font-weight: 500;
-    font-size: 64px;
+    font-size: 64pt;
     color: #F4CE14;
   }
   
   main section.hero .hero-content-wrapper h2{
-    font-size: 50px;
+    font-size: 54pt;
     margin-bottom: 26px;
     font-weight: 500;
   }
   
   main section.hero .hero-content-wrapper .hero-paragraph{
     width: 20ch;
-    font-family: 'karla';
-    font-size: 16px;
-    line-height: 24px;
+    font-family: 'karla', sans-serif;
+    font-size: 16pt;
+    line-height: 1.5;
     color: #EDEFEE;
   }
 
@@ -38,15 +38,16 @@ main section.hero{
     border-radius: 16px;
     margin-top: 26px;
     background: #F4CE14;
-    font-family: 'karla';
-    font-size: 18px;
+    font-family: 'karla', sans-serif;
+    font-size: 18pt;
     border: none;
     cursor: pointer;
     transition: ease-in-out 0.2s;
   }
   
   main section.hero .hero-content-wrapper button:hover{
-    font-size: 24px;
+    color: #F4CE14;
+    background-color: #000;
   }
   
   main section.hero .image-wrapper img{
@@ -61,11 +62,26 @@ main section.hero{
     border-radius: 16px;
   }
 
+  @media (max-width: 869px) {
+    main section.hero .image-wrapper img{
+      top: 110px;
+    }
+
+    main section.hero .hero-content-wrapper h1{
+      font-size: 43pt;
+    }
+
+    main section.hero .hero-content-wrapper h2 {
+      font-size: 33pt;
+    }
+  }
+
   @media (max-width: 768px) {
     main section.hero{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     main section.hero .image-wrapper img{
         display: none;

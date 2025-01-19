@@ -9,11 +9,11 @@ const Footer = () => {
             <div className="footer-links">
                 <h3>Doormat Navigation</h3>
                 <a href='/'>Home</a>
-                <a href='/about'>About</a>
-                <a href='/menu'>Menu</a>
-                <a href='/reservation'>Reservation</a>
-                <a href='/'>Order Online</a>
-                <a href='/'>Login</a>
+                <a href='#about'>About</a>
+                <a href='#menu'>Menu</a>
+                <a href='/booking'>Reservation</a>
+                <a href='#order'>Order Online</a>
+                <a href='#login'>Login</a>
             </div>
             <div className="footer-links">
                 <h3>Contact</h3>

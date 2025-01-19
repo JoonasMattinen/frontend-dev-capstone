@@ -5,9 +5,9 @@ import { CarProfile } from "@phosphor-icons/react";
 
 const Specials = () => {
     return(
-    <section className='specials'>
+    <section id='menu' className='specials'>
             <div className='specials-heading'>
-            <h3>This weeks specials!</h3>
+            <h3>THIS WEEKS SPECIALS!</h3>
             <button type='button'>Online menu</button>
         </div>
         <div className='image-wrapper'>
@@ -15,8 +15,8 @@ const Specials = () => {
                 <img src={GreekSaladImg} alt='Greek salad'></img>
                 <div className='image-text-wrapper'>
                     <div className="header">
-                        <span>Greek salad</span>
-                        <span>$ 12.99</span>
+                        <span className='header-text'>Greek salad</span>
+                        <span className='price'>$ 12.99</span>
                     </div>
                     <span>The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons</span>
                     <div className="CTA">
@@ -31,8 +31,8 @@ const Specials = () => {
                 <img src={Bruschetta} alt='Bruschetta'></img>
                 <div className='image-text-wrapper'>
                     <div className="header">
-                        <span>Bruschetta</span>
-                        <span>$ 5.99</span>
+                        <span className='header-text'>Bruschetta</span>
+                        <span className='price'>$ 5.99</span>
                     </div>
                     <span>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil</span>
                     <div className="CTA">
@@ -47,8 +47,8 @@ const Specials = () => {
                 <img src={Dessert} alt='Lemon Dessert'></img>
                 <div className='image-text-wrapper'>
                     <div className="header">
-                        <span>Lemon Dessert</span>
-                        <span>$ 5.00</span>
+                        <span className='header-text'>Lemon Dessert</span>
+                        <span className='price'>$ 5.00</span>
                     </div>
                     <span>This comes straight from grandma's recipe book. Every last ingredient has been sourced and is as authentic as can be imagined</span>
                     <div className="CTA">

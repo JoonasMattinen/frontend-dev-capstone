@@ -10,21 +10,20 @@ main section.about {
 }
 
 section.about .text-wrapper h2{
-    font-size: 64px;
+    font-size: 20pt;
     font-weight: bold;
 }
 
 section.about .text-wrapper h3{
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 20pt;
+    font-weight: bold;
 }
 
 section.about .text-wrapper .about-paragraph{
-    font-size: 16px;
+    font-size: 16pt;
     font-weight: 400;
     font-family: 'Karla';
-    line-height: 24px;
-    width: 30ch;
+    line-height: 1.5;
 }
 
 section.about .image-wrapper{

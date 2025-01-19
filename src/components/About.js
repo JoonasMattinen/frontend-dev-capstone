@@ -3,7 +3,7 @@ import Mario2 from '../assets/images/Mario and Adrian b cropped.jpg'
 
 const About = () => {
     return (
-        <section className='about'>
+        <section id='about' className='about'>
             <div className='text-wrapper'>
                 <h2>Little Lemon</h2>
                 <h3>Chicago</h3>

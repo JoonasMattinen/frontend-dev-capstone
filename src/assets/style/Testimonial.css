@@ -8,7 +8,7 @@ main section.testimonials{
 }
 
 main section.testimonials h3{
-    font-size: 64px;
+    font-size: 20pt;
     font-weight: bold;
     margin: 26px 0;
 }
@@ -24,6 +24,7 @@ main section.testimonials .testimonial-card{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 223px;
     height: 240px;
     background-color: #EE9972;
@@ -42,7 +43,7 @@ main section.testimonials .testimonial-card .image img{
 }
 
 main section.testimonials .testimonial-card .image span{
-    font-size: 40px;
+    font-size: 20pt;
     color: #333333;
 }
 

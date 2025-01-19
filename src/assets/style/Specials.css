@@ -20,7 +20,7 @@ main section.specials .specials-heading{
 }
 
 main section.specials .specials-heading h3{
-  font-size: 64px;
+  font-size: 20pt;
   font-weight: bold;
 }
 
@@ -29,15 +29,16 @@ main section.specials .specials-heading button{
   height: 60px;
   border-radius: 16px;
   background: #F4CE14;
-  font-family: 'karla';
-  font-size: 18px;
+  font-family: 'karla', sans-serif;
+  font-size: 18pt;
   border: none;
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
 
 main section.specials .specials-heading button:hover{
-  font-size: 24px;
+  color: #F4CE14;
+  background-color: #000;
 }
 
 main section.specials .image-wrapper{
@@ -51,7 +52,7 @@ main section.specials .image-wrapper .image-card{
   display: flex;
   flex-direction: column;
   width: 291px;
-  gap: 10px;
+  gap: 20px;
 }
 
 main section.specials .image-wrapper .image-card img{
@@ -67,25 +68,44 @@ main section.specials .image-wrapper .image-card .image-text-wrapper{
 main section.specials .image-wrapper .image-card .image-text-wrapper .header{
   display: flex;
   justify-content: space-between;
-  font-family: "Karla";
-  font-weight: bold;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 10px;
+}
+
+main section.specials .image-wrapper .image-card .image-text-wrapper .header .header-text{
+  font-size: 20pt;
   color: #000;
+  font-weight: bold;
+}
+
+main section.specials .image-wrapper .image-card .image-text-wrapper .header .price{
+  font-size: 16pt;
+  color: #EE9972;
+  font-weight: normal;
 }
 
 main section.specials .image-wrapper .image-card .image-text-wrapper span{
-  font-family: "Karla";
-  font-size: 16px;
-  line-height: 24px;
-}
-
-main section.specials .image-wrapper .image-card .image-text-wrapper .header span:last-child{
-  color: #EE9972;
+  font-family: "Karla", sans-serif;
+  font-size: 16pt;
+  line-height: 1.5;
 }
 
 main section.specials .image-wrapper .image-card .image-text-wrapper .CTA{
   display: flex;
   align-items: center;
+  margin-top: 10px;
+  color: #495E57;
   gap: 10px;
+}
+
+main section.specials .image-wrapper .image-card .image-text-wrapper .CTA span{
+  font-size: 18pt;
+}
+
+main section.specials .image-wrapper .image-card .image-text-wrapper .CTA:hover{
+  color: #EE9972;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 main section.specials .image-wrapper .image-card .image-text-wrapper .CTA i{

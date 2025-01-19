@@ -1,0 +1,91 @@
+main section.booking{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: #EDEFEE ;
+    margin: 0 auto;
+}
+
+main section.booking form{
+    display: grid;
+    gap: 5px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid black;
+    padding: 40px;
+    background-color: #495E57;
+    border-radius: 16px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+main section.booking form .header{
+    text-align: center;
+}
+
+main section.booking form input, main section.booking form select{
+    height: 40px;
+}
+
+.custom-dropdown{
+    position: relative;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.dropdown-toggle{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    color: #144313;
+
+    span {
+        font-size: 16pt;
+        font-weight: bold;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    left: 0;
+    z-index: 1; /* Make sure the dropdown appears on top */
+    width: 100%; /* Match the width of the button */
+    padding: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Optional: for shadow effect */
+}
+
+.dropdown-item {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #144313;
+    font-size: bold;
+}
+
+.dropdown-item:first-child {
+    border-bottom: 1px dotted black;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0; /* Highlight when hovering */
+}
+
+.error{
+    color: red;
+}
+
+.submit{
+    margin: 20px 0 40px 0;
+}
+
+.success{
+    text-align: center;
+}

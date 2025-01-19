@@ -5,6 +5,7 @@
 @import url("Testimonial.css");
 @import url("Hero.css");
 @import url("About.css");
+@import url("Booking.css");
 
 *,
 *::before,
@@ -12,6 +13,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a{
+  text-decoration: none;
 }
 
 html{
@@ -25,7 +30,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   font-family: 'Markazi Text', sans-serif;
-  font-size: 18px;
+  font-size: 18pt;
   overflow-x: hidden;
 }
 
@@ -40,6 +45,7 @@ header.header{
   width: 100%;
   padding: 10px 0 10px 0;
   z-index: 999;
+  height: 80px;
 }
 
 nav {
@@ -70,7 +76,7 @@ nav {
   color: #000;
 }
 
-main{ max-width: 1440px; margin: 0 auto;}
+main{ max-width: 1440px; margin: 80px auto 0; }
 
 main section.divider{
   position: relative;
@@ -92,30 +98,31 @@ footer{
 footer .footer-links{
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 footer .footer-links h3{
   font-family: 'Karla';
-  font-size: 18px;
+  font-size: 18pt;
   font-weight: bold;
-  color: 090808;
+  color: #090808;
   line-height: 24px;
   text-wrap: nowrap;
+  margin-bottom: 10px;
 }
 
 footer .footer-links a,
 footer .footer-links p {
   font-family: 'Karla';
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   text-decoration: none;
   color: #EDEFEE;
-  transition: font-size 0.1s ease-in-out;
   line-height: 24px;
 }
 
 footer .footer-links a:hover{
-  font-size: 18px;
+  color: #EE9972;
 }
 
 footer .image-wrapper{
@@ -166,6 +173,10 @@ footer .image-wrapper img{
 }
 
 @media (max-width: 869px) {
+  main section.divider{
+    height: 50px;
+  }
+
   footer{
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
