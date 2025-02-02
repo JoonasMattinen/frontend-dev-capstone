@@ -8,7 +8,7 @@ const Specials = () => {
     <section id='menu' className='specials'>
             <div className='specials-heading'>
             <h3>THIS WEEKS SPECIALS!</h3>
-            <button type='button'>Online menu</button>
+            <button aria-live='On Click' type='button'>Online menu</button>
         </div>
         <div className='image-wrapper'>
             <div className='image-card'>
