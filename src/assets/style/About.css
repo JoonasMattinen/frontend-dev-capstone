@@ -9,6 +9,11 @@ main section.about {
     margin-top: 100px;
 }
 
+section.about .text-wrapper{
+    width: 100%;
+    max-width: 50ch;
+}
+
 section.about .text-wrapper h2{
     font-size: 20pt;
     font-weight: bold;
@@ -58,5 +63,9 @@ section.about .image-wrapper .outer{
 
     section.about .text-wrapper{
         text-align: center;
+    }
+
+    section.about .image-wrapper{
+        max-width: 200px;
     }
 }
