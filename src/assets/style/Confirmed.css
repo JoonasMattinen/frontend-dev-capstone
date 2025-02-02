@@ -1,0 +1,11 @@
+main section.confirmed-booking{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+main section.confirmed-booking h2,main section.confirmed-booking p{
+    margin: 0 auto;
+}
