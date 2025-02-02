@@ -83,5 +83,38 @@ test('user can submit the form successfully and see the success message', () => 
     expect(mockDispatch).toHaveBeenCalledTimes(1); // Ensure the dispatch function was called at least once
 });
 
+test('user cannot submit the form with missing or invalid fields and sees appropriate validation error messages', () => {
+    // Mock dispatch function
+    const mockDispatch = jest.fn();
+  
+    render(<BookingForm dispatch={mockDispatch} availableTimes={["17:00", "18:00", "19:00", "20:00"]} />);
+  
+    // Simulate a submit with no fields filled
+  
+    // Do not fill in the date field (leave it empty)
+    const dateInput = screen.getByLabelText(/choose date/i);
+    
+    // Do not fill in the time field (leave it empty)
+    const timeSelect = screen.getByLabelText(/choose time/i);
+  
+    // Do not fill in the number of guests (leave it empty)
+    const guestsInput = screen.getByLabelText(/number of guests/i);
+    
+    // Do not select an occasion (leave it as the default "Occasion")
+    
+    // Submit the form without completing all required fields
+    const submitButton = screen.getByRole('button', { name: /make your reservation/i });
+    fireEvent.click(submitButton);
+  
+    // Check that the dispatch function was NOT called
+    expect(mockDispatch).not.toHaveBeenCalled();
+  
+    // Check for validation error messages
+    expect(screen.getByText(/date is required/i)).toBeInTheDocument();
+    expect(screen.getByText(/time is required/i)).toBeInTheDocument();
+    expect(screen.getByText(/please select an occasion/i)).toBeInTheDocument();
+  });
+  
+
 
 
