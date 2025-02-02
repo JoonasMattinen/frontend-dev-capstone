@@ -44,7 +44,17 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 
     const validateForm = () => {
         const errors = {};
-        if (!formData.date) errors.date = "Date is required";
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        if (!formData.date) {
+            errors.date = "Date is required";
+        } else {
+            const selectedDate = new Date(formData.date);
+            if (selectedDate < today) {
+                errors.date = "Date cannot be in the past";
+            }
+        }
         if (!formData.time) errors.time = "Time is required";
         if (!formData.guests) errors.guests = "Number of guests is required";
         if (formData.guests < 1 || formData.guests > 10)
@@ -73,6 +83,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
 
     return (
         <section className="booking">
+            <h2>You can reserve your table by filling out the form below.</h2>
             <form onSubmit={handleSubmit} noValidate>
                 <h2 className="header">Book Now</h2>
                 {/* Date Input */}
@@ -124,6 +135,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
                         onClick={toggleDropdown}
                         aria-expanded={isOpen}
                         aria-controls="occasion-menu"
+                        aria-label="On Click"
                     >
                         <i><Cheers size={32} /></i>
                         <span>{formData.occasion}</span>
@@ -158,7 +170,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
                 {formErrors.occasion && <span className="error" aria-live="assertive">{formErrors.occasion}</span>}
 
                 {/* Submit Button */}
-                <input className="submit" type="submit" value="Make Your Reservation" />
+                <input aria-label="On Click" className="submit" type="submit" value="Make Your Reservation" />
             </form>
         </section>
     );
