@@ -11,7 +11,7 @@ const Nav = () => {
 
     return(
         <nav>
-            <button className="mobile-nav" onClick={toggleMenu}><DotsThreeVertical size={32}/></button>
+            <button aria-label="On Click" className="mobile-nav" onClick={toggleMenu}><DotsThreeVertical size={32}/></button>
             <ul className={`nav-links-wrapper ${isOpen ? "open" : ""}`}>
                 <li><a href="/">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
